@@ -197,14 +197,16 @@ export default function ClickTracker() {
         <button
           type="button"
           onClick={() => handleDecision("Yes")}
-          className="px-6 py-3 rounded-2xl shadow bg-green-500 text-white text-xl"
+          className="px-6 py-3 rounded-2xl shadow bg-green-500 text-white text-xl disabled:opacity-50 disabled:cursor-not-allowed"
+          disabled={!tp || !sl}
         >
           Yes
         </button>
         <button
           type="button"
           onClick={() => handleDecision("No")}
-          className="px-6 py-3 rounded-2xl shadow bg-red-500 text-white text-xl"
+          className="px-6 py-3 rounded-2xl shadow bg-red-500 text-white text-xl disabled:opacity-50 disabled:cursor-not-allowed"
+          disabled={!tp || !sl}
         >
           No
         </button>
@@ -274,7 +276,8 @@ export default function ClickTracker() {
         <button
           type="button"
           onClick={exportData}
-          className="px-6 py-3 rounded-2xl shadow bg-blue-600 text-white text-xl"
+          className="px-6 py-3 rounded-2xl shadow bg-blue-600 text-white text-xl disabled:opacity-50 disabled:cursor-not-allowed"
+          disabled={records.length === 0}
         >
           Export
         </button>
