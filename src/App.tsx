@@ -261,6 +261,18 @@ export default function ClickTracker() {
         </button>
         <button
           type="button"
+          onClick={() => {
+            if (records.length > 0) {
+              setRecords((prev) => prev.slice(0, -1));
+            }
+          }}
+          className="px-6 py-3 rounded-2xl shadow bg-orange-600 text-white text-xl disabled:opacity-50 disabled:cursor-not-allowed"
+          disabled={records.length === 0}
+        >
+          Delete Last
+        </button>
+        <button
+          type="button"
           onClick={exportData}
           className="px-6 py-3 rounded-2xl shadow bg-blue-600 text-white text-xl"
         >
