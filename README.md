@@ -4,16 +4,16 @@ A React-based application for tracking and analyzing trading decisions with Take
 
 ## Features
 
-- 📊 **Trade Tracking**: Record trading decisions (Yes/No) with TP and SL values
-- 💾 **Persistent Storage**: All data saved to localStorage - survives page refreshes
-- 📈 **Statistics Dashboard**: Real-time analytics including:
+- **Trade Tracking**: Record trading decisions (Yes/No) with TP and SL values
+- **Persistent Storage**: All data saved to localStorage - survives page refreshes
+- **Statistics Dashboard**: Real-time analytics including:
   - Total trades count
   - Win/loss breakdown
   - Total net profit/loss
   - Win rate percentage
   - Average net per trade
-- 📥 **CSV Export**: Download your trading history for further analysis
-- ⚡ **Real-time Updates**: Instant calculation of results based on decisions
+- **CSV Export**: Download your trading history for further analysis
+- **Real-time Updates**: Instant calculation of results based on decisions
   - **Yes** = Trade hit TP (profit: +TP)
   - **No** = Trade hit SL (loss: -SL)
 
